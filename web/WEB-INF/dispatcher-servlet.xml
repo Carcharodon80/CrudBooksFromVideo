@@ -7,18 +7,17 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
 
-    <mvc:resources mapping="/resources/**" location="/resources/" />
 
-
-    <context:component-scan base-package="bookmanager" />
+    <context:component-scan base-package="bookmanager"/>
     <mvc:annotation-driven/>
 
 
     <bean
             class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/pages/" />
-        <property name="suffix" value=".jsp" />
+        <property name="prefix" value="/WEB-INF/pages/"/>
+        <property name="suffix" value=".jsp"/>
     </bean>
 
 </beans>
